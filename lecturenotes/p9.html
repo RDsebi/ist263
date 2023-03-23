@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P9</title>
+    <style>
+        nav{
+            background-color: #000000;
+            padding: 10px;
+            color: #ffffff;
+            display: flex;
+            justify-content: flex-end; /* must be on row container */
+        }
+        nav div{
+            padding: 5px;
+        }
+        .navigation{
+            justify-content: space-between;
+        }
+        .navsplit{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation">  <!--big row with two columns--> 
+    <div class="navsplit"> <!--column for big row and row for nav items-->
+        <div><a href="https:/www.google.com" >Google</a></div>
+        <div><a href="https:/amazon.com">Amazon</a></div>
+        <div><a href="https:/tesla.com">Tesla</a></div>
+    </div>
+    <div class="navsplit">
+        <div>&#x1F600;</div>
+        <div>&#x2764;</div>
+    </div>
+</nav>
+</body>
+</html>
