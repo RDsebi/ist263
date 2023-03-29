@@ -42,6 +42,7 @@ nav a:hover{
 .img1{
     float: left;
     margin-right: 10px;
+    max-width: 100%;
 }
 .row1, .row2{
     display: flex;
@@ -51,6 +52,7 @@ nav a:hover{
     margin-right: 20px;
     padding: 20px;
     border-radius: 20px;
+    flex-wrap: wrap;
 }
 
 .col1, .col2, .col3, .col4{
@@ -111,4 +113,14 @@ p{
     padding: auto;
     margin: 40px;
 }
+@media only screen and (max-width: 800px){
+    nav a{
+        width: 100%;
+        display: block; 
+        margin: 10px;
+    }
+    span{
+        display: none;
+    }
 
+}
