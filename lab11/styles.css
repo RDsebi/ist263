@@ -133,6 +133,7 @@ p{
     position: absolute;/* positions element relative to top left of view port */
     top: 10px;
     left: -999px; /* off screen */
+    color: #000000;
 }
 .skip:focus {
     left: 10px; /* back on screen */
