@@ -1,0 +1,137 @@
+body{
+    font-family: Arial, sans-serif;
+    color: #E7F6F2;
+    background-color: #395B64;
+    margin: 10px; 
+    padding: 10px;
+    border-radius: 10px; 
+}
+h1,h2{
+    color: #E7F6F2;
+    text-align: center;
+}
+.evenrow{
+    background-color:#A5C9CA;
+}
+h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 2em;
+}
+
+nav{
+    background-color: #2C3333;
+    color: #E7F6F2;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+nav a{
+    color: #E7F6F2;
+}
+nav a:hover{
+    color: #A5C9CA;
+}
+.quote{
+    float: right;
+}
+.copyright{
+    float: left;
+}
+.img1{
+    float: left;
+    margin-right: 10px;
+    max-width: 100%;
+}
+.row1, .row2{
+    display: flex;
+    background-color: #A5C9CA;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.col1, .col2, .col3, .col4{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.col1{
+    flex: 1;
+}
+
+.col2{
+    flex: 3;
+}
+
+.col3{
+    flex: 1;
+}
+
+.col4{
+    flex: 2;
+}
+.flexbox2{
+    display: flex;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.aside{
+    background-color: #2C3333;
+    color: #E7F6F2;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+.c1{
+    flex-basis: 75%;
+}
+.c2{
+    flex-basis: 25%;
+}
+p{
+    margin: 30px;
+}
+.skillspic{
+    width: 100px;
+    height: 100px;
+}
+.intro{
+    display: flex;
+}
+.intro p {
+    flex-basis: 70%;
+    padding: auto;
+    margin: 40px;
+}
+@media only screen and (max-width: 800px){
+    nav a{
+        width: 100%;
+        display: block; 
+        margin: 10px;
+    }
+    span{
+        display: none;
+    } 
+}
+.skip {
+    background-color: #ffbf00;
+    padding: 5px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    position: absolute;/* positions element relative to top left of view port */
+    top: 10px;
+    left: -999px; /* off screen */
+}
+.skip:focus {
+    left: 10px; /* back on screen */
+}
