@@ -6,6 +6,7 @@ body{
     padding: 10px;
     border-radius: 10px; 
 }
+
 h1,h2{
     color: #E7F6F2;
     text-align: center;
@@ -53,6 +54,7 @@ nav a:hover{
     padding: 20px;
     border-radius: 20px;
     flex-wrap: wrap;
+    color: #000000;
 }
 
 .col1, .col2, .col3, .col4{
@@ -124,7 +126,7 @@ p{
     } 
 }
 .skip {
-    background-color: #ffbf00;
+    background-color: red;
     padding: 5px;
     border: 1px solid #000000;
     text-decoration: none;
