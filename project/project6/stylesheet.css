@@ -1,7 +1,7 @@
 :root {
     --dark-blue: #1a2b42;
     --light-blue: #b5cfd9;
-    --orange: #ff9a3c;
+    --grey : #808080;
   }
   
   /* Navigation Bar */
@@ -30,7 +30,7 @@
     font-weight: bold;
   }
   nav a:hover {
-    background-color: var(--orange);
+    background-color: var(--grey);
     color: #fff;
     transition: background-color 0.2s ease-in-out;
   }
@@ -80,7 +80,7 @@
   }
   
   h2 {
-    color: var(--orange);
+    color: var(--grey);
   }
   
   /* Footer */
