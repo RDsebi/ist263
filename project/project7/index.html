@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Half-Marathon for College Students</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script>
+        var slideIndex = 1;
+        showSlide(slideIndex);
+
+        function nextSlide() {
+            showSlide(slideIndex += 1);
+        }
+
+        function previousSlide() {
+            showSlide(slideIndex -= 1);
+        }
+
+        function showSlide(n) {
+            var i;
+            var slides = document.querySelectorAll('.slideshow img');
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+            }
+            slides[slideIndex - 1].classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="training.html">Training Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="slideshow">
+                <img src="../media/runningpic.jpeg" alt="Image 1" class="active">
+                <img src="../media/isaafter.jpeg" alt="Image 2">
+                <img src="../media/peoplebefore.jpeg" alt="Image 3">
+                <img src="../media/threeafterpic.jpeg" alt="Image 4">
+                <button class="prev" onclick="previousSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+            <div class="contentFlex">
+                <div class="par1">
+                    <h1 >Welcome to Half-Marathon for College students</h1>
+                        <p>
+                            This website dedicated to helping college students learn how to manage their time while training for a half marathon. Running a half marathon is a challenging goal, but it's also a rewarding experience that can help you build confidence, improve your physical fitness, and create lasting memories. And as a college student, you have the added challenge of balancing your running schedule with academic responsibilities and a busy social life. That's why this site was created. We provide training plans, nutrition advice, and tips on how to make the most of your time and achieve your goal of running 13.1 miles while still thriving in college. So, whether you're a seasoned runner or just starting out, join us on this journey and let's make it happen!
+                        </p>
+                        <article>
+                            <h2>Who am I</h2>
+                            <p>
+                            I am Sebastian Rodriguez, student at Syracuse University and as of right now training for my first half marathon. When I first started researching about a half marathon I found a lot of resourceful information on how to train, how to get the right nutrition and more, but the only thing I never found online was how to manage your time while running and being a college student. Being a college student we have many responsibilities like academics, extracurriculars and trying to have a social life and running a marathon is a task that takes a few hours a week. When you start running the longer distances it can take up to two hours in training.
+                            </p>
+                            <p>
+                            I decided to create this website to give you the best tips from my personal experience on how to manage your time while training for a half marathon and still being active in your academics and have a balance social life.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="par2">
+                        <aside>
+                            <img class="adBanner" src="../media/960x0.jpg" alt="advertising">
+                        </aside>
+                    </div>
+            </div>
+        </section>
+    
+    </main>
+
+    <footer>
+        <hr>
+        <p class="copyright">&copy;2020</p>
+        <p class="quote">"you want to be uncommon amongst uncommon people. Period." - David Goggins </p> 
+    </footer>
+</body>
+</html>

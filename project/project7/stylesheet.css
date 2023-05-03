@@ -1,0 +1,339 @@
+:root {
+    --dark-blue: #1a2b42;
+    --light-blue: #b5cfd9;
+    --grey : #1b182a;
+  }
+  
+  /* Navigation Bar */ 
+  nav {
+    background-color: var(--dark-blue);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: left;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  nav a:hover {
+    background-color: var(--grey);
+    color: #fff;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  @media (max-width: 800px) {
+    nav ul {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  /* Main Section */
+  body{
+    background-color: var(--light-blue);
+  }
+
+  section {
+    background-color: var(--light-blue);
+    padding: 20px;
+  }
+    .images {
+    margin: 20px 0;
+  }
+  
+  .images img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+  } 
+  
+  @media (max-width: 768px) {
+    .images {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+   
+  h2 {
+    color: var(--grey);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--dark-blue);
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #fff;
+    margin: 10px auto;
+    width: 50%;
+  }
+
+/* slideshow */
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    object-fit: contain;
+    }
+
+.slideshow img.active {
+    opacity: 1;
+}
+
+.slideshow button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 16px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slideshow button.prev {
+    left: 0;
+}
+
+.slideshow button.next {
+    right: 0;
+}
+
+
+/*slideshowTips */
+.slideshowTips {
+  position: relative;
+  width: 43%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slideshowTips img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  object-fit: contain;
+  }
+
+.slideshowTips img.active {
+  opacity: 1;
+}
+
+.slideshowTips button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 16px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slideshowTips button.prev {
+  left: 0;
+}
+
+.slideshowTips button.next {
+  right: 0;
+}
+
+/*content flex*/
+/* contentthat is going to have first flex item on the right and the ad banner which is item 2 to the right */
+.contentFlex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.par1 {
+  flex: 1;
+  flex-basis: 70%;
+}
+
+.par2 {
+  flex: 1;
+  max-width: 30%;
+}
+
+.adBanner {
+  max-width: 100%;
+  height: 400px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contentFlex {
+    flex-direction: column;
+  }
+
+  .par1,
+  .par2 {
+    flex: none;
+    max-width: 100%;
+  }
+}
+.tips-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.row1, .row2{
+  display: flex;
+}
+
+table {
+  border-collapse: collapse; /* combine cell borders */
+  width: 100%; /* set table width to 100% of its container */
+}
+
+th, td {
+  border: 1px solid black; /* add 1px black solid border to table headers and cells */
+  padding: 8px; /* add padding to improve cell content spacing */
+  text-align: center; /* center cell content horizontally */
+}
+
+th {
+  background-color: lightgray; /* add a light gray background color to table header cells */
+}
+.box{
+  background-color: #b1b2b5 ;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 7%;
+}
+@media only screen and (max-width: 768px) {
+  .tips-container {
+    flex-direction: column;
+  }
+  .row1, .row2{
+    flex-direction: column;
+  }
+}
+
+/* headContainer */
+.headContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.headTips{
+  flex: 1;
+  font-size: 50px;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 40%
+}
+
+
+.textSection{
+  max-width: 60%;
+}
+
+.contentTips{
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 768px) {
+  .headContainer {
+    flex-direction: column;
+  }
+  .slideshowTips{
+    width: 100%;
+  }
+  .textSection{
+    max-width: 100%;
+  }
+  aside{
+    width: 100%;
+  }
+  .contentTips{
+    flex-direction: column;
+  }
+  .headTips{
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+  }
+  .videoSection iframe{
+    width: 100%;
+  }
+}
+.itemContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between
+}
+.itemContainer img{
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+.itemContainer h3{
+  text-align: center;
+  margin: 10px;
+}
+.items{
+  background-color: #98adb5;
+}
+/* i want section items to be a little less taller */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

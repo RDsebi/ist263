@@ -6,6 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Half-Marathon for College Students</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script>
+        var slideIndex = 1;
+        showSlide(slideIndex);
+
+        function nextSlide() {
+            showSlide(slideIndex += 1);
+        }
+
+        function previousSlide() {
+            showSlide(slideIndex -= 1);
+        }
+
+        function showSlide(n) {
+            var i;
+            var slides = document.querySelectorAll('.slideshow img');
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+            }
+            slides[slideIndex - 1].classList.add('active');
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -19,18 +46,37 @@
     </header>
     <main>
         <section>
-            <h1>Welcome to Half-Marathon for College students</h1>
+            <div class="content-container">
+                <div class="paragraph-container"></div>
+                <div class="ad-container">
+                  <div class="ad"></div>
+                </div>
+              </div>
+              <article class="col2">
+                <div></div>
+              </article>
+            
+            <div class="slideshow">
+                <img src="../media/WhatsApp%20Image%202023-02-25%20at%204.07.29%20PM.jpeg" alt="Image 1" class="active">
+                <img src="../media/WhatsApp%20Image%202023-02-25%20at%204.08.15%20PM.jpeg" alt="Image 2">
+                <img src="../media/WhatsApp%20Image%202023-02-25%20at%204.17.41%20PM.jpeg" alt="Image 3">
+                <button class="prev" onclick="previousSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+
+
+            <h1 >Welcome to Half-Marathon for College students</h1>
             <p>
                 This website dedicated to helping college students learn how to manage their time while training for a half marathon. Running a half marathon is a challenging goal, but it's also a rewarding experience that can help you build confidence, improve your physical fitness, and create lasting memories. And as a college student, you have the added challenge of balancing your running schedule with academic responsibilities and a busy social life. That's why this site was created. We provide training plans, nutrition advice, and tips on how to make the most of your time and achieve your goal of running 13.1 miles while still thriving in college. So, whether you're a seasoned runner or just starting out, join us on this journey and let's make it happen!
             </p>
-            <div class="images">
-                <div><img src="../media/WhatsApp%20Image%202023-02-25%20at%204.07.29%20PM.jpeg" alt="Me running"></div>
-                <div> <img src="../media/WhatsApp%20Image%202023-02-25%20at%204.08.15%20PM.jpeg" alt="Me running"></div>
-                <div><img src="../media/WhatsApp%20Image%202023-02-25%20at%204.17.41%20PM.jpeg" alt="Me running"></div>
-            </div>
-          
            
-            
+             
             <article>
                 <h2>Who am I</h2>
                 <p>
@@ -40,6 +86,9 @@
                 I decided to create this website to give you the best tips from my personal experience on how to manage your time while training for a half marathon and still being active in your academics and have a balance social life.
                 </p>
             </article>
+            <aside>
+                <img class="adBanner" src="../media/960x0.jpg" alt="advertising">
+            </aside>
         </section>
     
     </main>
