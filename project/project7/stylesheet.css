@@ -327,3 +327,15 @@ iframe{
 .weblink{
   color: black;
 }
+.skip {
+  background-color: red;
+  padding: 5px;
+  border: 1px solid #000000;
+  text-decoration: none;
+  position: absolute;/* positions element relative to top left of view port */
+  top: 10px;
+  left: -999px; /* off screen */
+}
+.skip:focus {
+  left: 10px; /* back on screen */
+}
